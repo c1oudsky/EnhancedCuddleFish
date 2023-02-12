@@ -58,7 +58,7 @@ namespace SN_EnhancedCuddleFishBepInEx
             indicator.SetLabel(Language.main.Get("Cutefish"));
             indicator.pingType = PingType.Signal; /*seems icon is passed as a sprite into uGUI_Pings : OnIconChange(PingInstance) {
             ...blah-blah...
-            uGUI_Ping.SetIcon(sprite SpriteManager.Group.Pings, PingManager.sCachedPingTypeStrings.Get(instance.pingType)))
+            uGUI_Ping.SetIcon(SpriteManager.Group.Pings, PingManager.sCachedPingTypeStrings.Get(instance.pingType)))
             }
             So I guess you'd need to create and load a sprite asset to make a custom icon.
             */
